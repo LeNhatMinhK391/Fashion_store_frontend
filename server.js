@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect("mongodb+srv://danbuonno1:Kianatuna25.@fashion.nxm7znh.mongodb.net/")
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.log(err));
 
